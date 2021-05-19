@@ -1,0 +1,78 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+
+}
+
+:root {
+    --main: rgb(112, 159, 245);
+    --btns: rgb(42, 99, 204);
+    --correct: rgb(73, 231, 73);
+    --incorrect: rgb(255, 60, 25);
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--main);
+}
+
+body.correct {
+    background-color: var(--correct);
+}
+
+body.incorrect {
+    background-color: var(--incorrect);
+}
+
+/* Quiz Box */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px 2px;
+}
+/* Buttons Styles */
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 15px;
+    margin: 20px 0;
+}
+.btn {
+    background-color: var(--btns);
+    color: white;
+    border: 2px solid rgb(31, 70, 145);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none
+}
+.btn:hover {
+    border: 2px solid black;
+}
+.btn.correct {
+    background-color: var(--correct);
+    color: black;
+}
+.btn.incorrect {
+    background-color: var(--incorrect);
+}
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+.controllers {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.hide {
+    display: none;
+}
