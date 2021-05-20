@@ -24,20 +24,21 @@ This week we were challenged to create a timed quiz.
 Javascript as a whole has been a huge challange for me to try and overcome.
 
 ---
+
+I started to set up the bones of my JS file, i was trying to push my question array into my question element within my HTML and i ran into quite a few snags with that.
+
+---
+![screenshot](./screenshots/js-error-1.jpg)
+
 ## Victories
 
-<img src= "./images/styles2.png"/>
+![screenshot](./screenshots/HTMLCSS.jpg)
+
 
 ---
-The app started to come along really nicely as I began to add style to it!
-
-<img src= "./images/style1.png"/>
+I feel like ive really grasped the concept of HTML and CSS. This part is usually the most enjoyable for me.
 
 ---
-
-The design aspect is proabably my favorite part of the process. I found another really cool resource for adding icons! I decided to utilize that also! 
-
-<img src= "./images/resources1.png"/>
 
 ## Resources 
 

@@ -67,6 +67,12 @@ body.incorrect {
     font-size: 1.5rem;
     font-weight: bold;
     padding: 10px 20px;
+    background-color: var(--btns);
+    color: white;
+    border: 2px solid rgb(31, 70, 145);
+    border-radius: 5px;
+    color: white;
+    outline: none
 }
 .controllers {
     display: flex;
