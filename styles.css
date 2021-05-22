@@ -1,6 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Nobile', sans-serif;
 
 }
 
@@ -33,9 +33,10 @@ body.incorrect {
 /* Quiz Box */
 .container {
     background-color: white;
-    padding: 20px;
+    padding: 40px;
     border-radius: 15px;
     box-shadow: 0 0 15px 2px;
+
 }
 /* Buttons Styles */
 .btn-grid {
@@ -49,9 +50,10 @@ body.incorrect {
     color: white;
     border: 2px solid rgb(31, 70, 145);
     border-radius: 5px;
-    padding: 5px 10px;
+    padding: 10px 15px;
     color: white;
-    outline: none
+    outline: none;
+    font-size: 1em;
 }
 .btn:hover {
     border: 2px solid black;
@@ -74,10 +76,32 @@ body.incorrect {
     color: white;
     outline: none
 }
+.hs-btn {
+    font-size: 1rem;
+    padding: 5px 10px;
+    background-color: var(--btns);
+    color: white;
+    border: 2px solid rgb(31, 70, 145);
+    border-radius: 5px;
+    color: white;
+    outline: none
+}
 .controllers {
     display: flex;
     justify-content: center;
     align-content: center;
+}
+
+#score-time {
+    display:flex;
+    justify-content:space-around;
+}
+#score-time div {
+    padding: 15px;
+    font-size: 2rem;
+}
+#score, #time {
+    font-size: 2rem;
 }
 .hide {
     display: none;
