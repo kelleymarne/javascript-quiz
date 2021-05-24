@@ -42,12 +42,18 @@
         </div>
 
         <div id= "end-quiz" class="end-quiz hide">
-            <span>Enter Initials: <input type="text"></input></span>
+            <span>Enter Initials: <input type="text" id="submit-score"></input></span>
             <button id="hs-btn" class="hs-btn hide">Submit Score!</button>
 
         </div>
 
-        <div id="highscores" classs="highscores"></div>
+        <div id="highscores" class="highscores hide">
+            High Score Leader Board
+            <div id="stored-scores">
+                <ul id ="score-board"></ul>
+            </div>
+        </div>
+         
     </div>
 
     <!-- another DIV for final score with hide class -->
