@@ -30,15 +30,35 @@ I started to set up the bones of my JS file, i was trying to push my question ar
 ---
 ![screenshot](./screenshots/js-error-1.jpg)
 
+---
+
+Towards the end i ran into issues with my questions skipping objects in the array. Thankfully eric was able to help me troubleshoot that and figure out that we had a click event set up wrong to start over on the count of questions each time and thus skip over one, then two, then three.
+
+---
+
+Another challenge i faced when i was trying to google issues that i came across was the lack of straight vanilla javascript. A lot of the resources i found that made sense used a combo of vanilla and jquery, so that was challening to not be able to use jquery at all.
+
 ## Victories
 
 ![screenshot](./screenshots/HTMLCSS.jpg)
+
+## Finished Product
+![screenshot](./screenshots/finished1.jpg)
+![screenshot](./screenshots/finished2.jpg)
+![screenshot](./screenshots/finished3.jpg)
+![screenshot](./screenshots/finished4.jpg)
 
 
 ---
 I feel like ive really grasped the concept of HTML and CSS. This part is usually the most enjoyable for me.
 
 ---
+
+Thank goodness i was able to figure out how to make this web app succesfull. I was able to easily manipulate dom items to add and remove class's of hide so i could keep all of my content on one html page with many differnt viewable div's.
+
+---
+
+Overall this was an extremely challenging assignment. It really did push me out of my comfort zone, and really taught me how to start from scratch with all the basics and really be able to tie them all together and make it one finished product!
 
 ## Resources 
 
@@ -50,4 +70,3 @@ I feel like ive really grasped the concept of HTML and CSS. This part is usually
 
 <a href="https://www.w3schools.com/css/css_grid_container.asp">CSS Grid W3 Schools</a>
 
-<a href="https://coolors.co/">Coolors</a>
