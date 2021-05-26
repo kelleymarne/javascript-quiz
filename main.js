@@ -74,7 +74,7 @@ const questions =
             1: 'startQuiz()',
             2: 'call function startQuiz()',
             3: 'startQuiz{}',
-            answer:'startQuiz()'
+            answer: 'startQuiz()'
         },
         {
             question: 'How do you correctly write an IF statement?',
@@ -84,6 +84,7 @@ const questions =
             3: 'if i === 0 then',
             answer: 'if (i===0)'
         }];
+
 
 //  TIMER INFO ==================
 var timeLeft = 60;
@@ -122,19 +123,23 @@ function endQuiz() {
 //  CREATE NEXT QUESTION
 function nextQuestion() {
     questionEl.textContent = questions[counter].question
-    for (let i = 0; i < answerButtonsEl.length; i++) {
+    for (let i = 0; i < questions.length; i++) {
         answerButtonsEl[i].textContent = questions[counter][i];
-
-
-        answerButtonsEl[i].addEventListener('click', function (e) {
-            e.preventDefault();
-            checkAnswer(e.target.textContent);
-        })
     }
+}
+
+function nextBtnClick(e) {
+    e.preventDefault();
+    if (e.target.localName==='button') {
+        checkAnswer(e.target.textContent);
+    }
+    console.log(e);
 }
 
 // CHECK FOR RIGHT OR WRONG ANSWERS
 function checkAnswer(userAnswer) {
+    console.log('correct answer' + questions[counter].answer);
+    console.log('userAnswer' + userAnswer);
     if (questions[counter].answer === userAnswer) {
         score += 5;
         scoreEl.textContent = score;
@@ -143,7 +148,7 @@ function checkAnswer(userAnswer) {
         timeLeft -= 5;
         console.log('incorrect')
     }
-    
+
     counter++;
 
     if (counter === questions.length) {
@@ -194,7 +199,6 @@ function highScoreBoard() {
 // answerButtonsEl[0].addEventListener('click', function(e) {
 //     console.log(e.target.textContent);
 // })
-
+questionContainerEl.addEventListener('click', nextBtnClick)
 startButton.addEventListener('click', startGame)
 endQuizBtn.addEventListener('click', highScoreBoard)
-
