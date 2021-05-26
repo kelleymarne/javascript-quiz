@@ -58,13 +58,7 @@ body.incorrect {
 .btn:hover {
     border: 2px solid black;
 }
-.btn.correct {
-    background-color: var(--correct);
-    color: black;
-}
-.btn.incorrect {
-    background-color: var(--incorrect);
-}
+
 .start-btn, .next-btn {
     font-size: 1.5rem;
     font-weight: bold;
@@ -105,4 +99,7 @@ body.incorrect {
 }
 .hide {
     display: none;
+}
+#score-board li {
+    list-style-type: none;
 }
